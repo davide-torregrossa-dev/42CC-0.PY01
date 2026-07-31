@@ -1,6 +1,6 @@
 class Plant:
-    def __init__(self, name, height, age_in_days, 
-growth_speed, max_days):
+    def __init__(self, name:str, height:int, age_in_days:int, 
+growth_speed=0.4, max_days=20):
         self.name = name
         self.height = height
         self.age_in_days = age_in_days
@@ -18,13 +18,12 @@ growth_speed, max_days):
     def age(self, days):
         for day in range(days):
             print(f"=== Day {day+1} ===")
-            self.grow()
-            self.show()
-            self.age_in_days += 1
             if self.age_in_days == self.max_days+1:
                 print("💀💀💀 Your plant died! 💀💀💀")
                 break
-        
+            self.grow()
+            self.show()
+            self.age_in_days += 1
         if days == 7:
             print("Growth this week: ", round(self.growth_speed*7, 1), "cm", sep="")
 
