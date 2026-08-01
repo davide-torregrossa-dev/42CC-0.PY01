@@ -1,3 +1,5 @@
+#Implementare get_h e get_age
+
 class Plant:
     def __init__(self, name:str, height:float, age_in_days:int, 
 growth_speed=0.4, max_days=20, icon="🌱"):
