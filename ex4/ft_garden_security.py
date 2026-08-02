@@ -1,5 +1,3 @@
-#Implementare get_h e get_age
-
 class Plant:
     def __init__(self, name:str, height:float, age_in_days:int, 
 growth_speed=0.4, max_days=20, icon="🌱"):
@@ -43,6 +41,9 @@ growth_speed=0.4, max_days=20, icon="🌱"):
             self._age_in_days = days
             print(f"Age updated: {self._age_in_days} days")
 
+    def get_age(self):
+        return self._age_in_days
+
     def age(self, days:int):
         for day in range(days):
             print(f"=== Day {day+1} ===")
@@ -67,3 +68,6 @@ growth_speed=0.4, max_days=20, icon="🌱"):
                 return
             self._height = cm
             print(f"Height updated: {self._height}cm")
+
+    def get_height(self):
+        return self._height
