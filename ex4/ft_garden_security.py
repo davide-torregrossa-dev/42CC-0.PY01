@@ -2,7 +2,7 @@ class Plant:
     def __init__(
             self,
             name: str,
-            height: int,
+            height: float,
             age_in_days: int,
             growth_speed=0.4,
             max_days=20,
