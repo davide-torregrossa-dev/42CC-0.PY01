@@ -29,14 +29,13 @@ class Plant:
             self.grow()
             self.age_in_days += 1
             self.show()
-        if days == 7:
-            print(
-                "Growth this week: ",
-                round(self.growth_speed*7, 1),
-                "cm", sep="")
 
 
 if __name__ == "__main__":
     print("=== Garden Plant Growth ===")
-    plant = Plant("Rose", 25, 2, 0.2, 7)
-    plant.age(20)
+    plant = Plant("Rose", 0, 2, 0.2)
+    plant.age(7)
+    print(
+        "Growth this week: ",
+        round(plant.growth_speed*7, 1),
+        "cm", sep="")

@@ -62,9 +62,6 @@ class Plant:
             self.grow()
             self._age_in_days += 1
             self.show()
-        if days == 7:
-            print("Growth this week: ", round(self.growth_speed*7, 1),
-                  "cm", sep="")
 
     def height_is_valid(self, cm: float):
         if cm < 0:

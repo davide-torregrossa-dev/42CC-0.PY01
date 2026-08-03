@@ -33,10 +33,6 @@ class Plant:
             self.grow()
             self.age_in_days += 1
             self.show()
-        if days == 7:
-            print("Growth this week: ",
-                  round(self.growth_speed*7, 1),
-                  "cm", sep="")
 
 
 if __name__ == "__main__":
